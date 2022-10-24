@@ -1,0 +1,101 @@
+@import url("/assets/fonts/fonts.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    --primary-color: black;
+    --secondary-color: red;
+}
+
+#mbckg
+{
+    position: fixed;
+    z-index: -1000000;
+}
+
+section
+{
+    min-height: 100vh;
+}
+
+.mhero {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.mtitle {
+    width: 50%;
+    min-width: 500px;
+    padding: clamp(20px, 3vw, 100vw);
+}
+
+.mtitle {
+    text-align: right;
+    font-size: clamp(45px, 6vw, 20vh);
+    font-family: apple-tea;
+}
+
+.red {
+    color: var(--secondary-color)
+}
+
+.dynamictext {
+    padding: 150px 50px;
+    max-width: 800px;
+    transform: translate(-200px);
+}
+
+.ltxt {
+    font-size: 40px; 
+    margin-bottom: 50px;
+}
+
+.mltxt {
+    font-size: 30px;
+}
+
+@media (max-width: 1230px)
+{
+    .dynamictext {
+        transform: none;
+    }
+
+    .ltxt {
+        font-size: 1.7rem; 
+        margin-bottom: 1rem;
+    }
+    
+    .mltxt {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .dynamictext {
+        transform: none;
+    }
+
+    .ltxt {
+        font-size: 2rem; 
+        margin-bottom: 1rem;
+    }
+    
+    .mltxt {
+        font-size: 1rem;
+    }
+}
+
+.sep 
+{
+    height: calc(4000px + 100vh);
+}
