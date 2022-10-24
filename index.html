@@ -7,34 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 
-    <script defer src="slideshow.js"></script>
     <script defer src="app.js"></script>
 
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
-    <link rel="stylesheet" href="slideshow.css">
     <script src="bower_components/aos/dist/aos.js"></script>
 
 </head>
 
-<body>
-    <div class="navbar">
+<body id="start">
+    <header>
+    <div id="main-sidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#home">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
     </div>
-
-    <div class="content">
-        <!-- Title -->
-        <div>
-            <h1 id="title">Robotic Eagles</h1>
-        </div>
-
-        <div><img src="img/robotics_logo.jpg" width=200 height=200></div>
-        <div class="aos-item" data-aos="flip-left"><img src="img/robotics_logo.jpg" width=200 height=200></div>
-        <div class="aos-item" data-aos="flip-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
-        <div class="aos-item" data-aos="fade-left"><img src="img/robotics_logo.jpgg" width=200 height=200></div>
-        <div class="aos-item" data-aos="fade-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+    
+    <div id="menubar-button">
+        <button class="openbtn" onclick="toggleNav()">&#9776;</button>
     </div>
+    
+        <div>
+            <img class="logo-image" src="img/robotics_logo.jpg">
+        </div>
+        <h1 id="title">Robotic Eagles</h1>
+        <div class="aos-item" data-aos="flip-left"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+
+    </header>
+
+    <section id="about-us">
+        <div class="content">
+            <div><img src="img/robotics_logo.jpg" width=200 height=200></div>
+            <div class="aos-item" data-aos="flip-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+            <div class="aos-item" data-aos="fade-left"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+            <div class="aos-item" data-aos="fade-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+        </div>
+    </section>
 
 </body>
 
