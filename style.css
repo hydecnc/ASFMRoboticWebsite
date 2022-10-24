@@ -13,7 +13,9 @@ body {
 
 #title {
     text-align: center;
-    font-size: 40;
+    font-size: 60px;
+    font-family: "Alegreya";
+    font-style: italic;
 }
 
 *,
@@ -25,7 +27,7 @@ body {
 .aos-all {
     width: 1000px;
     max-width: 98%;
-    margin: 10vh auto 0 auto;
+    /* margin: 10vh auto 0 auto; */
 }
 
 .aos-item {
@@ -61,32 +63,92 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed;
+    /* position: fixed; */
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
     /* Full width */
+    padding: 10px;
 }
 
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #d21f3c;
+    display: block;
+    transition: 0.3s;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-    background: #ffcccb;
-    color: black;
+.sidebar a:hover {
+    color: #dc372f;
 }
 
-/* Main content */
-.main {
-    margin-top: 30px;
-    /* Add a top margin to avoid content overlay */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #808080;
+    color: aqua;
+    padding: 5px 5px;
+    border: none;
+    float: right;
+}
+
+#menubar-button {
+    width: 100%;
+    background-color: #808080;
+    overflow: hidden;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Shift content to left when menubar is active */
+#start {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    background-color: #808080;
+}
+
+/* Change the style of the menubar on smaller screen*/
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.logo-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
