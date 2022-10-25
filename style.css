@@ -30,6 +30,13 @@ body {
     /* margin: 10vh auto 0 auto; */
 }
 
+#warbeak{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .aos-item {
     display: inline-block;
     /* float: left; */
