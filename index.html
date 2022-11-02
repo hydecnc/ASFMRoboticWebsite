@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <title>ASFM Robotic Eagles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/robotics_logo.jpg">
 
+    <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
 
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
@@ -14,35 +15,42 @@
 
 </head>
 
-<body id="start">
-    <header>
-    <div id="main-sidebar" class="sidebar">
-        <a class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-    </div>
-    
-    <div id="menubar-button">
-        <button class="openbtn" onclick="toggleNav()">&#9776;</button>
-    </div>
-    
+<body id="main">
+    <section class="hero">
+        <div id="main-sidebar" class="sidebar">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="menubar-button">
+            <button class="openbtn" onclick="toggleNav()">&#9776;</button>
+        </div>
         <div>
             <img class="logo-image" src="img/robotics_logo.jpg">
         </div>
         <h1 id="title">Robotic Eagles</h1>
         <div class="aos-item" data-aos="flip-left"><img src="img/robotics_logo.jpg" width=200 height=200></div>
+    </section>
 
-    </header>
-
-    <section id="about-us">
-        <div class="content">
-            <div><img src="img/robotics_logo.jpg" width=200 height=200></div>
+    <section class="about-us">
+        <div class="about-us_items" data-aos="flip-up">
+            We are the Robotic Eagles. We are very smart. We are very smart. We are very smart. We are very smart. We
+            are very smart.
+            We are very smart. We are very smart. We are very smart. We are very smart. We are very smart. We are very
+            smart.
+            We are very smart. We are very smart. We are very smart. We are very smart. We are very smart. We are very
+            smart.
+        </div>
+        <div class="about-us_items" class="aos-item" data-aos="fade-down">
+            <div class="aos-item"><img src="img/robotics_logo.jpg" width=200 height=200></div>
             <div class="aos-item" data-aos="flip-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
             <div class="aos-item" data-aos="fade-left"><img src="img/robotics_logo.jpg" width=200 height=200></div>
             <div class="aos-item" data-aos="fade-right"><img src="img/robotics_logo.jpg" width=200 height=200></div>
         </div>
     </section>
+
+
 
 </body>
 

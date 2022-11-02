@@ -5,6 +5,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    transition: margin-left 0.5s;
+}
+
+header {
+    background-color: #808080;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
@@ -16,43 +23,6 @@ body {
     font-size: 60px;
     font-family: "Alegreya";
     font-style: italic;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-.aos-all {
-    width: 1000px;
-    max-width: 98%;
-    /* margin: 10vh auto 0 auto; */
-}
-
-.aos-item {
-    display: inline-block;
-    /* float: left; */
-    width: 50%;
-    height: 300px;
-    padding: 20px;
-}
-
-.aos-item__inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    float: left;
-    background: #dc372f;
-    line-height: 260px;
-    text-align: center;
-    color: #fff;
-}
-
-@media screen and (max-width: 800px) {
-    .aos-item {
-        width: 50%;
-    }
 }
 
 .sidebar {
@@ -109,13 +79,6 @@ body {
     background-color: #444;
 }
 
-/* Shift content to left when menubar is active */
-#start {
-    transition: margin-left 0.5s;
-    padding: 20px;
-    background-color: #808080;
-}
-
 /* Change the style of the menubar on smaller screen*/
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -135,3 +98,8 @@ body {
     margin-right: auto;
     display: block;
 }
+
+
+
+
+@import url("/assets/fonts/fonts.css");
